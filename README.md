@@ -1,7 +1,11 @@
 # chess-cli
-ghetto chess cli
+Play against a chess bot in the command line
 
-requirements: 
-  -python 3
-  -pip install python-chess
-  -suck this dick
+## Requirements:
+```bash
+apt install python3
+apt install python3-pip
+pip install python-chess
+```
+## Usage:
+python3 play.py
