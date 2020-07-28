@@ -101,7 +101,7 @@ class Game:
              return (None, self.board)
         result = None
         if self.board.is_checkmate():
-            print("checkmate: " + who(not self.board.turn) + " wins!")
+            print("checkmate: " + self.who(not self.board.turn) + " wins!")
             result = not self.board.turn
         elif self.board.is_stalemate():
             print("draw: stalemate")
