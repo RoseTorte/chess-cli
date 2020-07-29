@@ -8,4 +8,9 @@ apt install python3-pip
 pip install python-chess
 ```
 ## Usage:
+```bash
 python3 play.py
+```
+
+## How to play:
+Use UCI format, from square to square for example: g1f3
