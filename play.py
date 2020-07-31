@@ -1,3 +1,4 @@
+
 import chess
 import chess.polyglot
 import random
@@ -5,7 +6,6 @@ class Game:
   def __init__(self):
         self.board = chess.Board() 
         self.move = list(self.board.legal_moves)
-    
   def evaluate(self):
     wp = len(self.board.pieces(chess.PAWN, chess.WHITE))
     bp = len(self.board.pieces(chess.PAWN, chess.BLACK))
@@ -98,10 +98,8 @@ class Game:
 -30,-40,-40,-50,-50,-40,-40,-30,
 -30,-40,-40,-50,-50,-40,-40,-30,
 -30,-40,-40,-50,-50,-40,-40,-30]
- 
   def who(self,player):
         return "White" if player == chess.WHITE else "Black"
-    
   def get_move(self,prompt):
         uci = input(prompt)
         if uci and uci[0] == "q":
@@ -176,6 +174,7 @@ class Game:
           movehistory.append(bestmove)
           return bestmove
   def play_game(self):
+        print(self.board)
         try:
               while not self.board.is_game_over(claim_draw=True):
                   if self.board.turn == chess.WHITE:
