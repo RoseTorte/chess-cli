@@ -1,5 +1,4 @@
 import chess
-import chess.pgn
 import chess.polyglot
 import random
 class Game:
