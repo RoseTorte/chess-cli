@@ -174,7 +174,7 @@ class Game:
           movehistory.append(bestmove)
           return bestmove
   def play_game(self):
-        print(self.board)
+        print(self.board.unicode())
         try:
               while not self.board.is_game_over(claim_draw=True):
                   if self.board.turn == chess.WHITE:
@@ -184,7 +184,7 @@ class Game:
                   name = self.who(self.board.turn)
                   self.board.push_uci(uci)
                   print("################")
-                  board_stop = print(self.board)
+                  board_stop = print(self.board.unicode())
                   print("a b c d e f g h")
         except KeyboardInterrupt:
              print("Game interrupted!")
