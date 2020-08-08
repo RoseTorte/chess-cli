@@ -1,5 +1,6 @@
 # chess-cli
-Play against a chess bot in the command line
+Play against a chess bot in the command line.
+The bot is a simple alpha beta pruning algorithm. 
 
 ## Requirements:
 ```bash
